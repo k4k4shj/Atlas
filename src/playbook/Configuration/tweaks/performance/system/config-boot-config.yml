@@ -10,10 +10,10 @@ actions:
   - !run: {exe: 'bcdedit', args: '/set bootmenupolicy Legacy'}
 
     # Set boot manager descriptions
-  - !run:
-    exe: 'bcdedit'
-    args: '/set description "AtlasOS 10"'
-    builds: [ '<22000' ]
+  - # !run:
+    # exe: 'bcdedit'
+    # args: '/set description "AtlasOS 10"'
+    # builds: [ '<22000' ]
   - !run:
     exe: 'bcdedit'
     args: '/set description "AtlasOS 11"'
