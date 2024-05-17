@@ -58,8 +58,8 @@ tasks:
   # -------------------------------------------------------------------------- #
   #  performance\system                                                        #
   # -------------------------------------------------------------------------- #
-  - tweaks\performance\system\config-boot-config.yml
-  - tweaks\performance\system\disable-paging.yml
+  # - tweaks\performance\system\config-boot-config.yml # not dualbooting
+  # - tweaks\performance\system\disable-paging.yml # i trust page file
   - tweaks\performance\system\optimize-ntfs.yml
   - tweaks\performance\system\disable-service-host-split.yml
   - tweaks\performance\system\win32-priority-seperation.yml
@@ -143,7 +143,7 @@ tasks:
   - tweaks\qol\config-start-menu.yml
   - tweaks\qol\config-windows-ink-workspace.yml
   - tweaks\qol\disable-background-auto-login.yml
-  - tweaks\qol\disable-mouse-accel.yml
+  # - tweaks\qol\disable-mouse-accel.yml # i hope i dont get carpal tunnel
   - tweaks\qol\disable-settings-tips.yml
   - tweaks\qol\disable-spell-checking.yml
   - tweaks\qol\disable-store-auto-updates.yml
@@ -155,7 +155,7 @@ tasks:
   - tweaks\qol\do-not-reduce-sounds.yml
   - tweaks\qol\hide-disabled-disconnected-sounds.yml
   - tweaks\qol\show-all-tasks-control-panel.yml
-  - tweaks\qol\visual-effects.yml
+  # - tweaks\qol\visual-effects.yml # i like effects huhu
   - tweaks\qol\disable-tips.yml
   - tweaks\qol\disable-win11-settings-banner.yml
 
@@ -163,7 +163,7 @@ tasks:
   #  qol\appearance                                                            #
   # -------------------------------------------------------------------------- #
   - tweaks\qol\appearance\blue-tooltips.yml
-  - tweaks\qol\appearance\atlas-theme.yml
+  # - tweaks\qol\appearance\atlas-theme.yml # let me customize muy windows :')
   - tweaks\qol\appearance\disallow-theme-changes.yml
 
   # -------------------------------------------------------------------------- #
@@ -190,7 +190,7 @@ tasks:
   # -------------------------------------------------------------------------- #
   - tweaks\qol\explorer\always-more-details-transfer.yml
   - tweaks\qol\explorer\disable-invalid-shortcuts-search.yml
-  - tweaks\qol\explorer\disable-check-boxes.yml
+  # - tweaks\qol\explorer\disable-check-boxes.yml # i use checkboxes
   - tweaks\qol\explorer\disable-folders-this-pc.yml
   - tweaks\qol\explorer\disable-network-navigation-pane.yml
   - tweaks\qol\explorer\disable-sharing-wizard.yml
@@ -212,18 +212,18 @@ tasks:
   - tweaks\qol\explorer\debloat-send-to.yml
 
   # -------------------------------------------------------------------------- #
-  #  qol\explorer\add-context-menus                                            #
+  #  qol\explorer\add-context-menus                                            # # uhh i don't really use all these #
   # -------------------------------------------------------------------------- #
-  - tweaks\qol\explorer\add-context-menus\merge-as-trustedinstaller.yml
-  - tweaks\qol\explorer\add-context-menus\new-bat.yml
-  - tweaks\qol\explorer\add-context-menus\new-ps1.yml
-  - tweaks\qol\explorer\add-context-menus\new-reg.yml
+  # - tweaks\qol\explorer\add-context-menus\merge-as-trustedinstaller.yml
+  # - tweaks\qol\explorer\add-context-menus\new-bat.yml
+  # - tweaks\qol\explorer\add-context-menus\new-ps1.yml
+  # - tweaks\qol\explorer\add-context-menus\new-reg.yml
 
   # -------------------------------------------------------------------------- #
   #  qol\explorer\remove-context-menus                                         #
   # -------------------------------------------------------------------------- #
   - tweaks\qol\explorer\remove-context-menus\cast-to-device.yml
-  - tweaks\qol\explorer\remove-context-menus\extract-all.yml
+  # - tweaks\qol\explorer\remove-context-menus\extract-all.yml # sometimes 7-zip derps
   - tweaks\qol\explorer\remove-context-menus\give-access-to.yml
   - tweaks\qol\explorer\remove-context-menus\include-in-library.yml
   - tweaks\qol\explorer\remove-context-menus\new-bitmap.yml
@@ -281,7 +281,7 @@ tasks:
   - tweaks\qol\taskbar\disable-copilot.yml
   - tweaks\qol\taskbar\disable-windows-chat.yml
   - tweaks\qol\taskbar\set-to-left.yml
-  - tweaks\qol\taskbar\end-task.yml
+  # - tweaks\qol\taskbar\end-task.yml # it doesnt show up in Win 10 at least for me
 
 
 
@@ -330,7 +330,7 @@ tasks:
   - tweaks\scripts\script-core-isolation.yml
   - tweaks\scripts\script-mitigations.yml
   - tweaks\scripts\script-devices.yml
-  - tweaks\scripts\script-pfp.yml
+  # - tweaks\scripts\script-pfp.yml # pls let me go rogue
   - tweaks\scripts\script-finalize.yml
   - tweaks\scripts\script-backup2.yml
   - tweaks\scripts\script-clientcbs.yml
