@@ -27,7 +27,7 @@ actions:
     option: 'disable-hibernation'
 
     # Set 'Balanced' power scheme if keeping power saving
-  - !run: {exe: 'powercfg.exe', args: '/setactive "381b4222-f694-41f0-9685-ff5bb260df2e"', option: '!disable-power-saving'}
+    # !run: {exe: 'powercfg.exe', args: '/setactive "381b4222-f694-41f0-9685-ff5bb260df2e"', option: '!disable-power-saving'} # let me power up :)
 
     # Delete scheme only used for installation
   - !powerShell: 
