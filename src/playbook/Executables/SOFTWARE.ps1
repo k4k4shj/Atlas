@@ -123,13 +123,13 @@ foreach ($a in $vcredists.GetEnumerator()) {
 	}
 }
 
-# 7-Zip
-$website = 'https://7-zip.org/'
-$download = $website + ((Invoke-WebRequest $website -UseBasicParsing).Links.href | Where-Object { $_ -like "a/7z*-$armString.exe" })
-Write-Output "Downloading 7-Zip..."
-& curl.exe -LSs $download -o "$tempDir\7zip.exe"
-Write-Output "Installing 7-Zip..."
-Start-Process -FilePath "$tempDir\7zip.exe" -WindowStyle Hidden -ArgumentList '/S' -Wait 2>&1 | Out-Null
+# 7-Zip # already using it
+# $website = 'https://7-zip.org/'
+# $download = $website + ((Invoke-WebRequest $website -UseBasicParsing).Links.href | Where-Object { $_ -like "a/7z*-$armString.exe" })
+# Write-Output "Downloading 7-Zip..."
+# & curl.exe -LSs $download -o "$tempDir\7zip.exe"
+# Write-Output "Installing 7-Zip..."
+# Start-Process -FilePath "$tempDir\7zip.exe" -WindowStyle Hidden -ArgumentList '/S' -Wait 2>&1 | Out-Null
 
 # Legacy DirectX runtimes
 & curl.exe -LSs "https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe" -o "$tempDir\directx.exe"
