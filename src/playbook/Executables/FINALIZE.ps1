@@ -11,7 +11,7 @@ if ((Get-Partition | Where-Object { $_.IsBoot } | Get-Disk | Get-PhysicalDisk).M
     Remove-Item -Path "Registry::HKCR\Drive\shellex\PropertySheetHandlers\{55B3A0BD-4D28-42fe-8CFB-FA3EDFF969B8}" -Force -ErrorAction SilentlyContinue
 
     # Disable SysMain - contains Superfetch, Prefetch, Memory Management Agents
-    # Set-Service -Name SysMain -StartupType Disabled # i want to use pagefile
+    Set-Service -Name SysMain -StartupType Disabled
 }
 
 # Disable brightness slider service if it's not supported on the current display
